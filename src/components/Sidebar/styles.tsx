@@ -1,34 +1,34 @@
 import styled from "styled-components";
 
 export const Aside = styled.aside`
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 32px;
-`
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 32px;
+`;
 
 export const List = styled.ul`
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-`
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+`;
 
 interface ListItemProps {
-    $active?: boolean
+  $active?: boolean;
 }
 
 export const ListItem = styled.li<ListItemProps>`
-    text-align: center;
-    border-bottom: 1px solid;
-    border-color: ${props => props.$active ? '#47A138' : '#000'};
-    color: ${props => props.$active ? '#47A138' : '#000'};
-    font-weight: ${props => props.$active ? '700' : '400'};
-    padding-bottom: 16px;
-`
+  text-align: center;
+  border-bottom: 1px solid;
+  border-color: ${(props) => (props.$active ? "#47A138" : "#000")};
+  color: ${(props) => (props.$active ? "#47A138" : "#000")};
+  font-weight: ${(props) => (props.$active ? "700" : "400")};
+  padding-bottom: 16px;
+`;
 
 export const Link = styled.a`
-    color: inherit;
-    text-decoration: none;
-`
+  color: inherit;
+  text-decoration: none;
+`;
