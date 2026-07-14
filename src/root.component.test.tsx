@@ -8,4 +8,13 @@ describe("Root component", () => {
 
     expect(getByText(/Início/i)).toBeInTheDocument();
   });
+
+  it("renders all sidebar menu items", () => {
+    const { getByText } = render(<Root />);
+
+    expect(getByText(/Início/i)).toBeInTheDocument();
+    expect(getByText(/Transferências/i)).toBeInTheDocument();
+    expect(getByText(/Investimentos/i)).toBeInTheDocument();
+    expect(getByText(/Outros serviços/i)).toBeInTheDocument();
+  });
 });
