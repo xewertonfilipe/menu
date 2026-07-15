@@ -51,6 +51,12 @@ docker compose up --build
 
 - Modo local do orchestrator (`isLocal`): consome `http://localhost:9003/bytebank-menu.js`
 
+## Responsividade
+
+- Layout do menu ajustado para telas pequenas, tablets e desktop.
+- Breakpoints validados: 320px, 768px e 1024px.
+- Ajustes principais: container com espacamento responsivo, itens com tipografia escalavel e links com area clicavel mais confortavel.
+
 ## Scripts uteis
 
 - `npm start`: sobe webpack dev server na porta 9003
