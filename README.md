@@ -93,3 +93,4 @@ npm run coverage
 1. Se a porta `9003` estiver ocupada, finalize o processo em conflito e rode `npm start` novamente.
 2. Se os links do menu nao aparecerem no shell, valide se o import map aponta para o host/porta corretos.
 3. Se houver CSS desatualizado, limpe cache e recarregue (Ctrl+F5).
+4. Se as chamadas de API estiverem indo para URL errada, valide a variavel `VITE_API_BASE_URL` no ambiente local ou nas Environment Variables da Vercel e gere novo deploy.
